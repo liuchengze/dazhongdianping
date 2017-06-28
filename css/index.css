@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.hide{
+    display: none;
+}
+.page,.subPage{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    transition: transform 0.5s linear;
+}
+.page-1{
+   background: #052f3a;
+   z-index: 999;
+}
+.arrow{
+    width: 0.5rem;
+    height: 0.28rem;
+    background: url("../img/icon_up.png") no-repeat;
+    background-size: 0.5rem 0.28rem;
+    position: fixed;
+    bottom: 0.5rem;
+    left: 45%;
+    z-index: 9999;
+}
+.pic1{
+    width: 4.96rem;
+    height: 6.05rem;
+    background: url("../img/cover.png") no-repeat;
+    background-size: 4.96rem 6.05rem;
+    margin-left: 0.7rem;
+    opacity: 0;
+}
+.pic2{
+    width: 3.69rem;
+    height: 2.59rem;
+    background: url("../img/wording_cover.png") no-repeat;
+    background-size: 3.69rem 2.59rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 1.3rem;
+    opacity: 0;
+}
+.page-2{
+    background: #bd1ce6;
+    z-index: 998;
+}
+.photo1{
+    width: 3.17rem;
+    height: 2rem;
+    background: url("../img/wording.png") no-repeat;
+    background-size: 3.17rem 2rem;
+    position: absolute;
+    top: 0.5rem;
+    left: 1.5rem;
+    opacity: 0;
+}
+.photo2{
+    width: 4.81rem;
+    height: 4.87rem;
+    background: url("../img/circle.png") no-repeat;
+    background-size: 4.81rem 4.87rem;
+    position: absolute;
+    left: 0.8rem;
+    top: 3rem;
+    opacity: 0;
+}
+.photo3{
+    width: 4.82rem;
+    height: 4.35rem;
+    background: url("../img/people.png") no-repeat;
+    background-size: 4.82rem 4.35rem;
+    position: absolute;
+    left: 1rem;
+    top: 4.6rem;
+    opacity: 0;
+}
+.photo4{
+    width: 4.6rem;
+    height: 6.6rem;
+    background: url("../img/floating_develop.png") no-repeat;
+    background-size: 4.6rem 6.6rem;
+    position: absolute;
+    left: 1rem;
+    top: 1.5rem;
+}
+.photo5{
+    width: 2.84rem;
+    height: 0.33rem;
+    background: url("../img/check_develop.png") no-repeat;
+    background-size: 2.84rem 0.33rem;
+    position: absolute;
+    left: 1.8rem;
+    bottom: 1.5rem;
+    opacity: 0;
+}
+
+.page-3{
+    background: #ff2f2a;
+    z-index: 997;
+}
+.photo6{
+    width: 3.32rem;
+    height: 2rem;
+    background: url("../img/wording_design.png") no-repeat;
+    background-size: 3.32rem 2rem;
+    position: absolute;
+    top: 0.5rem;
+    left: 1.5rem;
+}
+.photo7{
+    width: 5.01rem;
+    height: 4.81rem;
+    background: url("../img/circle-design.png") no-repeat;
+    background-size: 5.01rem 4.81rem;
+    position: absolute;
+    left: 0.8rem;
+    top: 3rem;
+    opacity: 0;
+}
+.photo8{
+    width: 3.45rem;
+    height: 5.29rem;
+    background: url("../img/people_design.png") no-repeat;
+    background-size: 3.45rem 5.29rem;
+    position: absolute;
+    left: 2.2rem;
+    top: 3.3rem;
+    opacity: 0;
+}
+.photo9{
+    width: 4.96rem;
+    height: 2.81rem;
+    background: url("../img/floating_design.png") no-repeat;
+    background-size: 4.96rem 2.81rem;
+    position: absolute;
+    left: 0.9rem;
+    top: 5.4rem;
+}
+.photo10{
+    width: 2.84rem;
+    height: 0.33rem;
+    background: url("../img/check_design.png") no-repeat;
+    background-size: 2.84rem 0.33rem;
+    position: absolute;
+    left: 1.8rem;
+    bottom: 1.5rem;
+    opacity: 0;
+}
+.page-4{
+    background: #ffbf31;
+    z-index: 990;
+}
+.photo11{
+    width: 3.24rem;
+    height: 2.1rem;
+    background: url("../img/wording_production.png") no-repeat;
+    background-size: 3.24rem 2.1rem;
+    position: absolute;
+    top: 0.5rem;
+    left: 1.5rem;
+}
+.photo12{
+    width: 5.06rem;
+    height: 5.06rem;
+    background: url("../img/circle-production.png") no-repeat;
+    background-size: 5.06rem 5.06rem;
+    position: absolute;
+    left: 0.8rem;
+    top: 3.4rem;
+    opacity: 0;
+}
+.photo13{
+    width: 3.22rem;
+    height: 4.29rem;
+    background: url("../img/people_production.png") no-repeat;
+    background-size: 3.22rem 4.29rem;
+    position: absolute;
+    left: 2rem;
+    top: 2.9rem;
+    opacity: 0;
+}
+.photo14{
+     width: 5.43rem;
+     height: 3.74rem;
+     background: url("../img/floating_production.png") no-repeat;
+     background-size: 5.43rem 3.74rem;
+     position: absolute;
+     left: 0.6rem;
+     top: 4.2rem;
+ }
+.photo15{
+    width: 3.38rem;
+    height: 0.5rem;
+    background: url("../img/pic_shadow_production.png") no-repeat;
+    background-size: 3.38rem 0.5rem;
+    position: absolute;
+    left: 1.8rem;
+    bottom: 1.8rem;
+    opacity: 0;
+}
+.photo16{
+    width: 2.84rem;
+    height: 0.33rem;
+    background: url("../img/check_production.png") no-repeat;
+    background-size: 2.84rem 0.33rem;
+    position: absolute;
+    left: 1.8rem;
+    bottom: 1.2rem;
+    opacity: 0;
+}
+.page-5{
+    background: #174b68;
+}
+.photo17{
+    width: 5.63rem;
+    height: 4.86rem;
+    background: url("../img/pic_back.png") no-repeat;
+    background-size: 5.63rem 4.86rem;
+    position: absolute;
+    top: 1.6rem;
+    left: 0.5rem;
+    transform-origin: top;
+    opacity: 0;
+}
+.photo18{
+    width: 5.2rem;
+    height: 0.88rem;
+    background: url("../img/btn_join.png") no-repeat;
+    background-size: 5.2rem 0.88rem;
+    position: absolute;
+    bottom: 3rem;
+    left: 0.6rem;
+    transform-origin: bottom;
+    opacity: 0;
+}
+.page-2-tu{
+    width: 5.87rem;
+    height: 7.14rem;
+   background: url("../img/introduction.png") no-repeat;
+    background-size: 5.87rem 7.14rem;
+    position: absolute;
+    top: 2rem;
+    left: 0.2rem;
+}
+.page-3-tu{
+    width: 5.87rem;
+    height: 7.14rem;
+    background: url("../img/introduction_design.png") no-repeat;
+    background-size: 5.87rem 7.14rem;
+    position: absolute;
+    top: 2rem;
+    left: 0.2rem;
+}
+.page-4-tu{
+    width: 5.87rem;
+    height: 7.14rem;
+    background: url("../img/introduction_production.png") no-repeat;
+    background-size: 5.87rem 7.14rem;
+    position: absolute;
+    top: 2rem;
+    left: 0.2rem;
+}
+/*滑屏*/
+
+/*上划*/
+.pageUp{
+    transform: translateY(-100%);
+}
+/*下滑*/
+.pageDown{
+    transform: translateY(100%);
+}
+
+/*左划*/
+
+.pageLeft{
+    transform: translateX(-100%);
+}
+
+/*右划*/
+
+.pageRight{
+    transform: translateX(100%);
+}

@@ -1,0 +1,85 @@
+
+.top{
+    animation: top 0.8s linear forwards;
+}
+
+
+.left{
+    animation: left 0.8s linear forwards;
+}
+.bottom{
+    animation: bottom 0.8s linear forwards;
+}
+.right{
+    animation: right 0.8s linear forwards;
+}
+.animatePhoto1{
+    animation: animatePhoto1 0.8s linear forwards;
+}
+.animatePhoto2{
+    animation: animatePhoto2 1.5s linear forwards;
+}
+.animatePhoto5{
+    animation: animatePhoto5 0.8s linear forwards;
+}
+.animatePhoto17{
+    animation: animatePhoto17 1s linear forwards;
+}
+.animatePhoto18{
+    animation: animatePhoto18 1s linear forwards;
+}
+.arrowMove{
+    animation: arrowMove 1s linear infinite;
+}
+@keyframes left {
+
+    0%{transform: translateX(-6rem);}
+    100%{transform: translateX(0);opacity: 1;}
+}
+@keyframes top {
+
+    0%{transform: translateY(-6rem);}
+    100%{transform: translateY(0);opacity: 1;}
+}
+@keyframes bottom {
+
+    0%{transform: translateY(6rem);}
+    100%{transform: translateY(0);opacity: 1;}
+}
+@keyframes right {
+
+    0%{transform: translateX(6rem);}
+    100%{transform: translateX(0);opacity: 1;}
+}
+@keyframes animatePhoto1 {
+
+    0%{transform: translateY(4rem)}
+    100%{transform: translateY(0);opacity: 1;}
+}
+@keyframes animatePhoto2 {
+
+    0%{transform: translateY(-6rem)}
+    45%{transform: translateY(0)}
+    75%{transform: translateY(-0.5rem)}
+    100%{transform: translateY(0);opacity: 1;}
+}
+@keyframes animatePhoto5 {
+
+      0%{opacity: 0;}
+      100%{opacity: 1;}
+  }
+@keyframes animatePhoto17 {
+
+    0%{transform: rotateX(270deg);}
+    100%{transform: rotateX(0deg);opacity: 1;}
+}
+@keyframes animatePhoto18 {
+
+    0%{transform: rotateX(160deg);}
+    100%{transform: rotateX(0deg);opacity: 1;}
+}
+@keyframes arrowMove {
+
+    0%{transform: translateY(0);opacity: 1;}
+    100%{transform: translateY(-0.2rem);opacity: 0;}
+}
